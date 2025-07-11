@@ -1,0 +1,20 @@
+services:
+  springboot-crud-backend:
+    build:
+      context: ./springboot-crud-backend
+    ports:
+      - "8080:8080"
+    networks:
+      - appnet
+
+  react-bootstrap-frontend:
+    build:
+      context: ./react-bootstrap-frontend
+    ports:
+      - "3000:80"
+    networks:
+      - appnet
+
+networks:
+  appnet:
+    driver: bridge

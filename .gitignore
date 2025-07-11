@@ -1,0 +1,6 @@
+# Docker
+*.pid
+*.log
+.env
+# OS artifacts
+.DS_Store
